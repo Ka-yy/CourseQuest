@@ -1,2 +1,2 @@
 # CourseQuest
-The repositoty for our project of the RAIN Hackathon 1.0
+The repositoty for our the RAIN Hackathon 1.0 project
