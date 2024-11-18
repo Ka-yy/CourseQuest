@@ -32,14 +32,15 @@ ALLOWED_HOSTS = []
 
 INSTALLED_APPS = [
     "django.contrib.admin",
-    "django.contrib.auth",
     "django.contrib.contenttypes",
     "django.contrib.sessions",
     "django.contrib.messages",
     "django.contrib.staticfiles",
     'rest_framework',
-    'auth',
-    'api',
+    'ratings',
+    'users',
+    'courses',
+    'ai',
 ]
 
 MIDDLEWARE = [
@@ -82,7 +83,7 @@ DATABASES = {
         "NAME":  'coursequest',
         "USER": 'postgres',
         "PASSWORD": '1234',
-        "HOST": 'localhost',# or my database host
+        "HOST": 'localhost',# or my/any database host
         "PORT": '5432',
     }
 }
@@ -112,7 +113,7 @@ AUTH_PASSWORD_VALIDATORS = [
 
 LANGUAGE_CODE = "en-us"
 
-TIME_ZONE = "Africa/lagos"
+TIME_ZONE = "Africa/Lagos"
 
 USE_I18N = True
 
