@@ -7,6 +7,7 @@ The repository for our the RAIN Hackathon 1.0 project
 We will eventually make this repo public later, so lets make sure to keep our code clean and organized.
 
 ## rules
+The main branch is the production branch i.e: it is the latest stable update, if we are presenting, we'll present that branch.
 
 PLEASE, NO matter what, DO NOT push to the main branch.
  as youre contributing, create your branches and work on them.
