@@ -32,6 +32,7 @@ ALLOWED_HOSTS = []
 
 INSTALLED_APPS = [
     "django.contrib.admin",
+    "django.contrib.auth",
     "django.contrib.contenttypes",
     "django.contrib.sessions",
     "django.contrib.messages",
@@ -44,7 +45,7 @@ INSTALLED_APPS = [
     'school',
 
 ]
-
+#  MAKE SURE TO ADD THE CORS HEADERS MIDDLEWARE HERE 
 MIDDLEWARE = [
     "django.middleware.security.SecurityMiddleware",
     "django.contrib.sessions.middleware.SessionMiddleware",
@@ -54,6 +55,9 @@ MIDDLEWARE = [
     "django.contrib.messages.middleware.MessageMiddleware",
     "django.middleware.clickjacking.XFrameOptionsMiddleware",
 ]
+# CORS_ALLOWED_ORIGINS = [
+#   "http://loaclhost:3000"  // or maybe the url of the fronend domain 
+# ]
 
 ROOT_URLCONF = "djangoproject.urls"
 
@@ -89,7 +93,6 @@ DATABASES = {
         "PORT": '5432',
     }
 }
-
 
 # Password validation
 # https://docs.djangoproject.com/en/5.1/ref/settings/#auth-password-validators
