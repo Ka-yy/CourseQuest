@@ -23,19 +23,20 @@ class Users(models.Model):
         ('500', '500 Level'),
         ('600', '600 Level')
     ]
-
+    # year 
     current_year = models.CharField(
         max_length=3,
         choices=YEAR_CHOICES,
         default='100'
     )
-    
+
+    #print the detials  
     def __str__(self):
         return f"{self.username} ({self.first_name} {self.last_name})"
 
 
     school = models.ForeignKey(
-        'school.School',  # Update this reference
+        'school.School',  
         on_delete=models.CASCADE,
         null=True,
         related_name='students'
